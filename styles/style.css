@@ -1,8 +1,13 @@
+@font-face {
+    font-family: "myfont";
+    src: url("../fonts/SandalsType.woff") format('woff');
+}
+
 body {
     background-color: black;
 }
 #page-title {
-    font-family: "Times New Roman", Times, serif;
+    font-family: myfont, sans-serif;
     font-size: 40px;
     font-weight: bold;
     color: white;
