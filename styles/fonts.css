@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "heading";
+    src: url("../fonts/SandalsType.woff") format('woff');
+}
+
+@font-face {
+    font-family: "TradeGothic";
+    src: url("../fonts/TradeGothicLT-CondEighteen.woff") format('woff');
+}
+
+@font-face {
+    font-family: "FreightProMedium";
+    src: url("../fonts/FreightTextProMedium-Regular.woff") format('woff');
+}
+
+#page-title {
+    font-family: heading;
+}
+
+#title {
+    font-family: TradeGothic;
+}
+
+#date {
+    font-family: TradeGothic;
+}
+
+#description {
+    font-family: FreightProMedium;
+}
+
+

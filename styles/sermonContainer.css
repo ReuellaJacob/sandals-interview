@@ -1,0 +1,50 @@
+/* flex container for sermon elements */
+
+#sermon-container{
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#sermon-video, #image_hd {
+    order: 1;
+    height: 80%;
+    width: 60%;
+    border-radius: 8px;
+}
+
+#sermon-info {
+    order: 2;
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #272b30;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+#title, #description, #date {
+    color: white;
+    font-weight: lighter;
+}
+
+#title {
+    order: 1;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#date {
+    order: 2;
+    font-size: 1rem;
+}
+
+#description {
+    order: 3;
+    font-size: 1.25rem;
+    margin: 0;
+}

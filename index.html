@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <title>Sandals Church</title>
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.5"></script>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/basicPage.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/sermonContainer.css">
 </head>
 <body>
-    <h1 id="page-title"></h1>
-    <div id="api-call-container">
-        <video controls="controls" id="sermon-video"></video>
+    <div class="container" id="top-nav-bar">
+        <a id="page-title" href="https://sandalschurch.com/">Sandals Church</a>
+    </div>
+    <div id="page-container" class="container">
+        <!-- HTML is dynamically generated using JS -->
     </div>
 </body>
 <script type="module" src="./javascript/apiCalls.js"></script>
 <script type="module" src="./javascript/video.js"></script>
+<script type="module" src="./javascript/dynamicHTML.js"></script>
 </html>
