@@ -31,7 +31,7 @@ function printResponse(response) {
     let pageTitle = document.getElementById("page-title");
     pageTitle.innerHTML = response.title;
 
-    // document.getElementById("image_hd").src= response.image_hd;
+    document.getElementById("image_hd").src= response.image_hd;
     // document.getElementById("image_sd").src= response.image_sd;
 
     // let apiDiv = document.getElementById("api-call-container");
@@ -43,7 +43,7 @@ getContent();
 function playVideo(url) {
     const hls = new Hls();
     if (Hls.isSupported()) {
-        const video = document.getElementById('video');
+        const video = document.getElementById('sermon-video');
                 // bind them together
         hls.attachMedia(video);
         console.log(url);

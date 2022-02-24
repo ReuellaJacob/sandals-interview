@@ -1,5 +1,14 @@
+body {
+    background-color: black;
+}
 #page-title {
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     font-weight: bold;
+    color: white;
+}
+
+#sermon-video, #image_hd {
+    height: 30%;
+    width: 60%;
 }
