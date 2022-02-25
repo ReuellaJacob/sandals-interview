@@ -22,7 +22,6 @@ export function carousel() {
             input.id = idName;
             input.type = 'radio';
             input.name = 'slider';
-            input.onclick = function() {location.replace(sermons[i]['web']);};
 
             if (i === 0) {
                 input.checked = true;
