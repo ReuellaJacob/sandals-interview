@@ -17,7 +17,7 @@ input[type=radio] {
     width: 100%;
     max-width: 800px;
     max-height: 600px;
-    height: 30%;
+    height: 40%;
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
@@ -44,7 +44,7 @@ input[type=radio] {
 #sermon0:checked ~ .cards #card2,
 #sermon1:checked ~ .cards #card0,
 #sermon2:checked ~ .cards #card1 {
-    transform: translatex(-60%) scale(.8);
+    transform: translatex(-20%) scale(.8);
     opacity: .4;
     z-index: 0;
 }
@@ -52,7 +52,7 @@ input[type=radio] {
 #sermon0:checked ~ .cards #card1,
 #sermon1:checked ~ .cards #card2,
 #sermon2:checked ~ .cards #card0 {
-    transform: translatex(60%) scale(.8);
+    transform: translatex(140%) scale(.8);
     opacity: .4;
     z-index: 0;
 }
@@ -60,7 +60,7 @@ input[type=radio] {
 #sermon0:checked ~ .cards #card0,
 #sermon1:checked ~ .cards #card1,
 #sermon2:checked ~ .cards #card2 {
-    transform: translatex(0) scale(1);
+    transform: translatex(60%) scale(1);
     opacity: 1;
     z-index: 1;
 }
