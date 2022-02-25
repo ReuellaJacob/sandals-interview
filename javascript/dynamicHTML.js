@@ -1,19 +1,14 @@
 export function dynamicHTML(response) {
     // get container
-    let container = document.getElementById('page-container');
+    let sermonContainer = document.getElementById('sermon-container');
 
     // create elements
-    let sermonContainer = document.createElement('div');
     let video = document.createElement('video');
 
     let sermonInfo = document.createElement('div');
     let sermonTitle = document.createElement('h2');
     let sermonDescription = document.createElement('p');
     let sermonDate = document.createElement('p');
-
-    // assign class/id
-    sermonContainer.className='container';
-    sermonContainer.id = 'sermon-container';
 
     video.id = 'sermon-video';
 
@@ -34,8 +29,6 @@ export function dynamicHTML(response) {
     sermonDate.innerHTML += response.date;
 
     // append elements
-    container.appendChild(sermonContainer);
-
     sermonContainer.appendChild(video);
     sermonContainer.appendChild(sermonInfo);
 
