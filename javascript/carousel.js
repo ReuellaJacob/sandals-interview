@@ -43,7 +43,7 @@ export function carousel() {
             let labelId = "card" + i;
 
             label.className = "card";
-            label.for = forElement;
+            label.htmlFor = forElement;
             label.id = labelId;
             image.className = "image";
 
