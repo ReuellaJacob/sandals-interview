@@ -28,12 +28,12 @@
     border-radius: 6px;
 }
 
-#title, #description, #date {
+.title, #description, #date {
     color: white;
     font-weight: lighter;
 }
 
-#title {
+.title {
     order: 1;
     font-size: 2rem;
     margin: 0;

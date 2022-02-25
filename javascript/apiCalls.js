@@ -2,12 +2,6 @@
 import {playVideo} from './video.js';
 import {dynamicHTML} from './dynamicHTML.js';
 
-function welcomeMessage() {
-    alert("Welcome to Sandals Church!");
-}
-
-// window.onload = welcomeMessage;
-
 function getContent() {
     let xhr = new XMLHttpRequest();
     let url = "https://sandalschurch.com/api/latest_sermon";
@@ -18,7 +12,6 @@ function getContent() {
 }
 
 function responseReceivedHandler() {
-    console.log(this.status);
     if(this.status === 200) {
         let jsonResponse = JSON.parse(this.response);
         dynamicHTML(jsonResponse);

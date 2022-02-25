@@ -4,10 +4,16 @@ html, body {
     margin: 0;
 }
 
-/*0.5rem 2rem 0.5rem 2rem*/
 body {
     background-color: black;
     overflow-x: hidden;
+}
+
+#other-series{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem 1rem 0 1rem;
+    text-decoration: underline;
 }
 
 #page-container{

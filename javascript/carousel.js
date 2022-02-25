@@ -8,14 +8,13 @@ async function loadData() {
     sermons = sermonsList.sermons
 }
 
-export function carousel() {
+function carousel() {
     loadData().then(_ => {
         // container for carousel
         let carousel = document.getElementById('carousel-container');
 
         // add the input buttons
         for(let i =0; i < sermons.length; i++) {
-            // console.log(sermons[i]);
             let idName = "sermon" + i;
             let input = document.createElement('input');
 

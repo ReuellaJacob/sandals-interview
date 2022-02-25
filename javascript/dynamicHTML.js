@@ -15,7 +15,7 @@ export function dynamicHTML(response) {
     sermonInfo.className = 'container';
     sermonInfo.id = 'sermon-info';
 
-    sermonTitle.id = 'title';
+    sermonTitle.className = 'title';
     sermonDescription.id = 'description';
     sermonDate.id = 'date';
 
