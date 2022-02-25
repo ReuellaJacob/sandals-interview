@@ -48,6 +48,7 @@ export function carousel() {
 
             image.src = sermons[i]['image']
             image.alt = sermons[i]['name']
+            image.ondblclick = function() {location.replace(sermons[i]['web']);};
 
             label.appendChild(image);
             card.appendChild(label);
