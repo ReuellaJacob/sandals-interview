@@ -7,6 +7,7 @@ html, body {
 /*0.5rem 2rem 0.5rem 2rem*/
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 #page-container{
