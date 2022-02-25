@@ -9,4 +9,9 @@ I chose to not use a framework since this is a very basic project. I did not wan
 
 The reason I dynamically generated the HTML was to avoid having to hard code the sermon elements. It was also an attampt to mimic what it would have looked like if the website was fetching data from a database instead of a local JSON file.
 
+Regarding the carousel, I know this isn't the most intuitive yet but 
+* Single Click: it changes the carousel selection
+* Double Click: it hyperlinks to the sermon series
+
+---
 _Created by: Reuella Jacob_
