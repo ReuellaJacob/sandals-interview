@@ -3,6 +3,7 @@ input[type=radio] {
 }
 
 .carousel-container {
+    margin: 1rem;
     width: 100%;
     max-width: 800px;
     max-height: 600px;
@@ -34,4 +35,28 @@ input[type=radio] {
     height: 30%;
     border-radius: 10px;
     object-fit: cover;
+}
+
+#sermon1:checked ~ .cards #card3,
+#sermon2:checked ~ .cards #card1,
+#sermon3:checked ~ .cards #card2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#sermon1:checked ~ .cards #card2,
+#sermon2:checked ~ .cards #card3,
+#sermon3:checked ~ .cards #card1 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 0;
+}
+
+#sermon1:checked ~ .cards #card1,
+#sermon2:checked ~ .cards #card2,
+#sermon3:checked ~ .cards #card3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 1;
 }
