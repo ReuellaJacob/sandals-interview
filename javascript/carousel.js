@@ -14,44 +14,44 @@ function carousel() {
         let carousel = document.getElementById('carousel-container');
 
         // add the input buttons
-        for(let i =0; i < sermons.length; i++) {
-            let idName = "sermon" + i;
+        sermons.forEach((sermon, index) => {
+            let idName = "sermon" + index;
             let input = document.createElement('input');
 
             input.id = idName;
             input.type = 'radio';
             input.name = 'slider';
 
-            if (i === 0) {
+            if (index === 0) {
                 input.checked = true;
             }
 
             carousel.appendChild(input);
-        }
+        })
 
         // container for carousel cards
         let card = document.createElement('div')
         card.className = "cards"
 
-        for(let i =0; i < sermons.length; i++) {
+        sermons.forEach((sermon, index) => {
             let label = document.createElement('label');
             let image = document.createElement('img')
 
-            let forElement = "sermon" + i;
-            let labelId = "card" + i;
+            let forElement = "sermon" + index;
+            let labelId = "card" + index;
 
             label.className = "card";
             label.htmlFor = forElement;
             label.id = labelId;
             image.className = "image";
 
-            image.src = sermons[i]['image']
-            image.alt = sermons[i]['name']
-            image.ondblclick = function() {location.replace(sermons[i]['web']);};
+            image.src = sermon['image']
+            image.alt = sermon['name']
+            image.ondblclick = function() {location.replace(sermon['link']);};
 
             label.appendChild(image);
             card.appendChild(label);
-        }
+        })
         carousel.appendChild(card);
     })
 }

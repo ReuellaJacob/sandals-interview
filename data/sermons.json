@@ -3,17 +3,17 @@
     {
       "name": "the-healer",
       "image": "https://sandalschurch.com/wp-content/uploads/2022/02/the-healer-key-370x208.jpg",
-      "web": "https://sandalschurch.com/series/the-healer/"
+      "link": "https://sandalschurch.com/series/the-healer/"
     },
     {
       "name": "holy-shift",
       "image": "https://sandalschurch.com/wp-content/uploads/2022/01/Holy-Shift-Key-Art--370x208.jpg",
-      "web": "https://sandalschurch.com/series/holy-shift/"
+      "link": "https://sandalschurch.com/series/holy-shift/"
     },
     {
       "name": "real-christmas",
       "image": "https://sandalschurch.com/wp-content/uploads/2021/12/a-real-christmas-key-370x208.jpg",
-      "web": "https://sandalschurch.com/series/a-real-christmas/"
+      "link": "https://sandalschurch.com/series/a-real-christmas/"
     }
   ]
 }
